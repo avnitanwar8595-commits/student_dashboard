@@ -1,0 +1,92 @@
+/* Basic page design */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eef2f7;
+    color: #222;
+    margin: 0;
+    padding: 40px 20px;
+    transition: 0.3s;
+}
+
+/* Main dashboard */
+.dashboard {
+    max-width: 750px;
+    margin: 30px auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h1 {
+    color: #2563eb;
+}
+
+/* Button layout */
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-bottom: 25px;
+}
+
+/* Common button styling */
+button {
+    padding: 12px 18px;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+#showBtn {
+    background-color: #2563eb;
+}
+
+#addBtn {
+    background-color: #16a34a;
+}
+
+#themeBtn {
+    background-color: #9333ea;
+}
+
+button:hover {
+    opacity: 0.85;
+}
+
+/* Individual student cards */
+.student-card {
+    background-color: #f8fafc;
+    border: 1px solid #dbe3ee;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 12px 0;
+    text-align: left;
+}
+
+/* Dark theme */
+body.dark-theme {
+    background-color: #111827;
+    color: #f9fafb;
+}
+
+body.dark-theme .dashboard {
+    background-color: #1f2937;
+}
+
+body.dark-theme h1 {
+    color: #93c5fd;
+}
+
+body.dark-theme .student-card {
+    background-color: #374151;
+    border-color: #4b5563;
+}
+
+#message {
+    font-weight: bold;
+}
